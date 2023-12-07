@@ -1,4 +1,11 @@
 pandas
 numpy
 seaborn
--e .
+matplotlib
+scikit-learn
+catboost
+xgboost
+tensorflow
+tensorflow-datasets
+tensorflow-probability
+#-e .
