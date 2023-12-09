@@ -8,4 +8,5 @@ xgboost
 tensorflow
 tensorflow-datasets
 tensorflow-probability
+dataclasses
 -e .
