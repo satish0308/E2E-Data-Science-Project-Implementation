@@ -66,7 +66,9 @@ class ModelTrainer:
                     # 'max_features':['auto','sqrt','log2'],
                     'n_estimators': [8,16,32,64,128,256]
                 },
-                "Linear Regression":{},
+                "Linear Regression":{
+                    'criterion':['copy_X', 'fit_intercept', 'n_jobs', 'positive'],
+                },
                 "XGBRegressor":{
                     'learning_rate':[.1,.01,.05,.001],
                     'n_estimators': [8,16,32,64,128,256]
