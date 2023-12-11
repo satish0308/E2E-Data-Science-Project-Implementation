@@ -1,9 +1,12 @@
 from flask import Flask,request,render_template
+
 import numpy as np
 import pandas as pd
 
 from sklearn.preprocessing import StandardScaler
-from src.pipeline.predict_pipeline import CustomData,PredictPipeline
+
+from src.pipeline.predict_pipeline import CustomException,CustomData,predictpipeline
+
 
 application=Flask(__name__)
 
@@ -34,7 +37,7 @@ def predict_datapoint():
         print(pred_df)
         print("Before Prediction")
 
-        predict_pipeline=PredictPipeline()
+        predict_pipeline=predictpipeline()
         print("Mid Prediction")
         results=predict_pipeline.predict(pred_df)
         print("after Prediction")
@@ -42,6 +45,4 @@ def predict_datapoint():
     
 
 if __name__=="__main__":
-    app.run(host="127.0.0.1")        
-
-
+    app.run(host="0.0.0.0",debug=True)

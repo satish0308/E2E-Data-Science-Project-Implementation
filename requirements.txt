@@ -10,4 +10,5 @@ tensorflow-datasets
 tensorflow-probability
 dataclasses
 dill
+Flask
 -e .
