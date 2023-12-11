@@ -9,4 +9,5 @@ tensorflow
 tensorflow-datasets
 tensorflow-probability
 dataclasses
+dill
 -e .
